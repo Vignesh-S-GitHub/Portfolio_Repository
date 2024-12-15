@@ -1,0 +1,35 @@
+inxi is not installed, but available in package inxi, press [Enter] to run it, Ctrl+C to cancel.System:
+  Kernel: 6.1.112+ arch: x86_64 bits: 64 compiler: clang v: 16.0.0
+  Console: pty pts/3 Distro: IDX GNU/Linux 1
+Machine:
+  Type: Virtual-machine Mobo: Google model: Google Compute Engine serial: <superuser required>
+    UEFI: Google v: Google date: 11/25/2024
+CPU:
+  Info: single core model: AMD EPYC 7B12 bits: 64 type: MT arch: Zen 2 rev: 0 cache: L1: 64 KiB
+    L2: 512 KiB L3: 16 MiB
+  Speed (MHz): avg: 2250 min/max: N/A cores: 1: 2250 2: 2250 bogomips: 8999
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
+Graphics:
+  Message: Required tool lspci not installed. Check --recommends
+  Display: server: No display server data found. Headless machine? tty: 131x17
+  API: N/A Message: No API data available in console. Headless machine?
+Audio:
+  Message: No device data found.
+Network:
+  Message: Required tool lspci not installed. Check --recommends
+  IF-ID-1: eth0 state: up speed: 10000 Mbps duplex: full mac: <filter>
+Drives:
+  Local Storage: total: 78 GiB used: 21.02 GiB (26.9%)
+  ID-1: /dev/sda model: PersistentDisk size: 50 GiB
+  ID-2: /dev/sdb model: PersistentDisk size: 18 GiB
+  ID-3: /dev/sdc model: PersistentDisk size: 10 GiB
+Partition:
+  ID-1: /home size: 9.75 GiB used: 4.56 GiB (46.8%) fs: ext4 dev: /dev/google-home
+Swap:
+  Alert: No swap data was found.
+Sensors:
+  Src: lm-sensors Missing: Required tool sensors not installed. Check --recommends
+Info:
+  Memory: total: 8 GiB available: 7.76 GiB used: 2.43 GiB (31.3%)
+  Processes: 21 Uptime: 4h 50m Init: N/A
+  Packages: N/A Compilers: gcc: 13.2.0 Shell: Bash v: 5.2.32 inxi: 3.3.34
