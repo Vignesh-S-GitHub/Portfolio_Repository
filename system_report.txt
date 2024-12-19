@@ -1,5 +1,10 @@
 streamlit run in IDX or any cloud hosted platform: streamlit run app.py --server.enableCORS=false --server.enableXsrfProtection=false
 
+kafka-python psycopg2 pandas apache-airflow
+
+airflow notes:
+
+CLI: airflow dags trigger kafka_postgres_pipeline
 
 airflow users create \
     --username vignesh \
@@ -23,8 +28,33 @@ airflow webserver --stop
 airflow scheduler --stop
 airflow celery stop
 
+kafka-topics.sh --list --bootstrap-server localhost:9092
+kafka-topics.sh --delete --topic <topic-name> --bootstrap-server localhost:9092
+
+kafka-server-stop.sh
+
+kafka-console-producer.sh --topic test --bootstrap-server localhost:9092
+
+kafka-console-consumer.sh --topic test --bootstrap-server localhost:9092 --from-beginning
+
+docker run -d -p 9092:9092 --name broker apache/kafka:latest
+
+docker rmi <image-id>
+
+docker exec -it broker /bin/bash
+docker logs broker
+docker inspect broker - Mounts section in the output.
+
+nohup python kafka_producer.py &
+
+psql -U postgres -d <database_name> -h localhost -p 5432
+-U postgres: The username (default is postgres).
+-d <database_name>: The database name you want to connect to.
+-h localhost: The host (use localhost if running locally).
+-p 5432: The port (default is 5432).
 
 
+-------------------------------------------------------------------------------------------------
 inxi is not installed, but available in package inxi, press [Enter] to run it, Ctrl+C to cancel.System:
   Kernel: 6.1.112+ arch: x86_64 bits: 64 compiler: clang v: 16.0.0
   Console: pty pts/3 Distro: IDX GNU/Linux 1
