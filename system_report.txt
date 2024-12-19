@@ -1,5 +1,30 @@
 streamlit run in IDX or any cloud hosted platform: streamlit run app.py --server.enableCORS=false --server.enableXsrfProtection=false
 
+
+airflow users create \
+    --username vignesh \
+    --firstname vignesh \
+    --lastname shanmugam \
+    --email vignesh@gmail.com \
+    --role Admin \
+    --password password
+
+Roles Available:
+Admin: Full access to Airflow (view, create, delete, etc.).
+Op: Can access and trigger DAGs, view logs, and more.
+Viewer: Can only view DAGs and logs but can't trigger or modify them.
+
+airflow users list
+
+airflow scheduler
+airflow webserver --port 8080
+
+airflow webserver --stop
+airflow scheduler --stop
+airflow celery stop
+
+
+
 inxi is not installed, but available in package inxi, press [Enter] to run it, Ctrl+C to cancel.System:
   Kernel: 6.1.112+ arch: x86_64 bits: 64 compiler: clang v: 16.0.0
   Console: pty pts/3 Distro: IDX GNU/Linux 1
