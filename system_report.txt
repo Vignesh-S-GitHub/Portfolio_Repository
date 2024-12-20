@@ -53,6 +53,12 @@ psql -U postgres -d <database_name> -h localhost -p 5432
 -h localhost: The host (use localhost if running locally).
 -p 5432: The port (default is 5432).
 
+superset fab create-admin \
+    --username admin \
+    --firstname vignesh \
+    --lastname shanmugam \
+    --email vignesh@superset.com \
+    --password password
 
 -------------------------------------------------------------------------------------------------
 inxi is not installed, but available in package inxi, press [Enter] to run it, Ctrl+C to cancel.System:
