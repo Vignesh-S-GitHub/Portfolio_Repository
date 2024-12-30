@@ -1,3 +1,5 @@
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/nix/store/6j56a7k1dva3n9paj85z08i08x0cbzy4-glib-2.78.6/lib
+
 streamlit run in IDX or any cloud hosted platform: streamlit run app.py --server.enableCORS=false --server.enableXsrfProtection=false
 
 kafka-python psycopg2 pandas apache-airflow
