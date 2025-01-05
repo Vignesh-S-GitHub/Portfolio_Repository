@@ -155,6 +155,7 @@ SQLAlchemy-JSONField
 SQLAlchemy-Utils
 sqlparse
 streamlit
+selenium
 tabulate
 tenacity
 termcolor
