@@ -178,3 +178,4 @@ yarl
 yfinance
 zipp
 python-dotenv
+fastapi
