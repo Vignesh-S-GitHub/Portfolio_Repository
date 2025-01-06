@@ -177,3 +177,4 @@ WTForms
 yarl
 yfinance
 zipp
+python-dotenv
